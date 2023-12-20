@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login {
+    
+    background-image: url('https://i.pinimg.com/564x/ca/3f/15/ca3f15773508645f1f401040ee2a28f8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 78vh;
+    background-attachment: fixed;
+    padding: 7% 0px;
+    
+}
+
+#login .container {
+
+    max-width: 700px;
+    height: 550px;
+    background-color: burlywood;
+    position: fixed;
+    display: flex;
+    margin-left: 250px;
+    /* border:2px solid red; */
+
+  
+
+}
+
+
+.leftSidePopUp {
+    width: 250px;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, rgb(83, 139, 223), white);
+
+}
+
+.leftSidePopUp .whySide {
+    margin: 10px 5px;
+    color: whitesmoke;
+}
+
+.leftSidePopUp .whySide h2 {
+    margin: 15px 10px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.leftSidePopUp .whySide p {
+    margin: 10px 10px;
+    font-size: 17px;
+}
+
+.leftSidePopUp .whySide .checkmarkp {
+    position: relative;
+    padding-left: 20px; /* Установите желаемый отступ для текста справа от галочки */
+}
+  
+.leftSidePopUp .whySide .checkmarkp::before {
+content: '';
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: 10px; /* Ширина вашей галочки */
+height: 10px; /* Высота вашей галочки */
+background: url('https://img6.hkrtcdn.com/react/static/media/signupFlow/white-bg-tick.svg') center center no-repeat;
+background-size: contain; /* Это гарантирует, что изображение не будет больше своего контейнера */
+margin-right: 10px; /* Расстояние между галочкой и текстом */
+
+}
+
+
+.rightSidePopUp {
+    background-color: #f7f7f7;
+    width: 450px;
+    display: flex;
+}
+
+.rightSidePopUp .loginPage {
+    margin: 10px 5px;
+}
+
+.rightSidePopUp .loginPage label{
+    margin: 10px 35px;
+    color: rgb(112, 109, 109);
+}
+
+.rightSidePopUp .loginPage input{
+    width: 300px;
+    height: 25px;
+    margin: 5px 35px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.rightSidePopUp .loginPage h1 {
+    float: right;
+}
+
+.rightSidePopUp .loginPage #timeBar {
+    cursor: pointer;
+    color: rgb(83, 139, 223)
+
+}
+
+.rightSidePopUp .loginPage .userPanel {
+    display: flex;
+    color: rgb(112, 109, 109);
+
+}
+
+.rightSidePopUp .loginPage h3 {
+    margin: 35px 10px;
+    font-size: 20px;
+}
+
+.rightSidePopUp .loginPage h3 a {
+    text-decoration: none;
+    color: rgb(83, 139, 223)
+}
+
+.loginPage #loginH3 a {
+    border-bottom: 3px solid rgb(83, 139, 223)
+}
+
+.rightSidePopUp .loginPage label {
+    margin: 10px 35px;
+    color: rgb(112, 109, 109);
+
+}
+
+.rightSidePopUp .loginPage .form {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    flex-direction: column;
+}
+
+.rightSidePopUp .loginPage .form input {
+    width: 300px;
+    height: 25px;
+    margin: 5px 35px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.rightSidePopUp .loginPage #btn {
+    width: 343px;
+    height: 45px;
+    margin: 30px 35px;
+    text-transform: uppercase;
+    font-size: 20px;
+    /* background-color: #00afae; */
+    background-color: rgb(83, 139, 223);
+    border: 1px solid rgb(83, 139, 223);
+    color: #f7f7f7;
+    outline:none;
+
+}
+
+#home{
+    color:white;
+    text-decoration: none;;
+}
+
+
+
+.rightSidePopUp .loginPage a {
+    margin: 10px 35px;
+}
+
+.rightSidePopUp .loginPage #or {
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+.loginPage .lines {
+    margin: 3px 35px;
+    display: flex;
+    color: rgb(112, 109, 109);
+}
+
+.rightSidePopUp .loginPage .oneline {
+    border-bottom: 1px solid rgb(112, 109, 109);
+    width: 160px;
+    margin-bottom: 7px;
+}
+
+.rightSidePopUp .loginPage .twoline {
+    border-bottom: 1px solid rgb(112, 109, 109);
+    width: 160px;
+    margin-bottom: 7px;
+}
+
+.rightSidePopUp .loginPage #social {
+    border: 1px solid rgb(112, 109, 109);
+    padding: 8px 18px;
+    width: 100px;
+    margin: 0px 35px;
+    text-decoration: none;
+    color: rgb(112, 109, 109);
+}
+
+.signup {
+    cursor: pointer;
+
+}
+
+.socialink {
+    margin: 30px 0px;
+}
+
+.hr {
+    border-bottom: 1px solid rgb(112, 109, 109);
+    padding: 1px 0px;
+    margin: 10px 35px;
+}
+
+.rightSidePopUp .loginPage #pTaglast {
+    margin: 10px 35px;
+    padding: 5px 0px;
+    color: rgb(112, 109, 109);
+    font-size: 15px;
+}
+
+.rightSidePopUp .loginPage #pTaglast a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.socialink img {
+    width: 15px;
+    /* margin-top: px; */
+}
