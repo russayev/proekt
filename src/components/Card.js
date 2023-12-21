@@ -18,7 +18,7 @@ const Card = () => {
   };
 
   const handleBuyNow = () => {
-    window.location.href = "./payment.html";
+    window.location.href = "./payment";
   };
 
   const handleIncrement = (id) => {
@@ -71,7 +71,7 @@ const Card = () => {
             <div>
               <h4>{ele.name}</h4>
               <p className="category">{ele.category}</p>
-              <p className="price">₹{ele.price}</p>
+              <p className="price">₸{ele.price}</p>
             </div>
             <div id="qunt">
               <button className="qunt" onClick={() => handleIncrement(ele.id)}>

@@ -1,13 +1,11 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
-import Filter from "./Filter";
-
+import React, { useState, useEffect, useRef } from "react";
+import Filter from "./filter/shoes_filter";
 import "./css/product.css";
 
-const Shoes = () => {
+const Product = () => {
   const paginationRef = useRef(null);
 
-  const [api, setApi] = useState("http://localhost:3001/items");
+  const [api, setApi] = useState("http://localhost:3000/shoes/");
   const [btns, setBtns] = useState(0);
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
@@ -23,22 +21,21 @@ const Shoes = () => {
 
   const countData = async (api) => {
     try {
-      const res = await fetch(`${api}`);
+      const res = await fetch(api);
       const data = await res.json();
       setBtns(Math.ceil(data.length / 12));
-      paginationButton(btns);
     } catch (error) {
-      console.log(error);
+      console.error("Error counting data:", error);
     }
   };
 
   const fetched = async (page, api) => {
     try {
-      const req = await fetch(`${api}&page=${page}&limit=12`);
+      const req = await fetch(`${api}&_page=${page}&_limit=12`);
       const res = await req.json();
       setData(res);
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching data:", error);
     }
   };
 
@@ -73,7 +70,11 @@ const Shoes = () => {
   };
 
   const display = (data) => {
-    let carditem = (
+    if (!data || !Array.isArray(data)) {
+      return null;
+    }
+
+    return (
       <div id="product">
         {data.map((ele) =>
           getCard(
@@ -87,17 +88,46 @@ const Shoes = () => {
         )}
       </div>
     );
-    setData(data);
-    addtoCard();
   };
+
   const getCard = (id, img, name, category, price, discount) => {
+    const handleButtonClick = async (e) => {
+      e.preventDefault();
+      let id = e.target.dataset.id;
+      try {
+        let res = await fetch(`http://localhost:3000/shoes/${id}`);
+        let ele = await res.json();
+        let obj = {
+          quantity: 1,
+          name: ele.name,
+          category: ele.category,
+          img: ele.img,
+          price: ele.price,
+          discount: ele.discount,
+          id: ele.id,
+        };
+        if (checkDuplicate(obj)) {
+          alert("Product added to cart");
+        } else {
+          alert("Product is already in the cart");
+        }
+      } catch (error) {
+        console.error("Error fetching product data:", error);
+      }
+    };
+
     return (
       <div className="card" key={id}>
         <div className="container" data-id={id}>
           <img src={img} alt="" />
           <div className="overlay"></div>
           <div className="button" data-id={id}>
-            <a href="#" data-id={id} className="btn">
+            <a
+              href="#"
+              data-id={id}
+              className="btn"
+              onClick={handleButtonClick}
+            >
               Add to Cart
             </a>
           </div>
@@ -105,7 +135,7 @@ const Shoes = () => {
         <div className="info">
           <h4>{name}</h4>
           <p className="category">{category}</p>
-          <p className="price">$ {price}</p>
+          <p className="price">₸ {price}</p>
           <p className="discount">{discount}% Off</p>
         </div>
       </div>
@@ -122,7 +152,7 @@ const Shoes = () => {
       e.preventDefault();
       let id = e.target.dataset.id;
       try {
-        let res = await fetch(`http://localhost:3001/items/${id}`);
+        let res = await fetch(`http://localhost:3000/shoes/${id}`);
         let ele = await res.json();
         let obj = {
           quantity: 1,
@@ -134,9 +164,9 @@ const Shoes = () => {
           id: ele.id,
         };
         if (checkDuplicate(obj)) {
-          alert("Product added in cart");
+          alert("Product added to cart");
         } else {
-          alert("Product already in cart");
+          alert("Product is already in the cart");
         }
       } catch (error) {
         console.error("Error fetching product data:", error);
@@ -151,7 +181,7 @@ const Shoes = () => {
 
   useEffect(() => {
     addtoCard();
-  }, []); // Вызываем addtoCart() только при монтировании компонента
+  }, []);
 
   return (
     <div>
@@ -162,52 +192,9 @@ const Shoes = () => {
       <Filter setApi={setApi} />
 
       <div id="mainpage">
-        {/* <div id="filter">
-                    <h3>Sort by</h3>
-                    <input type="radio" id="desc" name="Sort" value="desc"/>
-                    <label htmlFor="desc">High to low</label><br/>
-
-                    <input type="radio" id="asc" name="Sort" value="asc"/>
-                    <label htmlFor="asc">Low to High</label><br/>
-
-                    <input type="radio" id="Normal" name="Sort" value="Normal"/>
-                    <label htmlFor="Normal">Normal</label><br/>
-                    <br/>
-
-                    <hr/>
-                    <h3>Brand</h3>
-                    <input type="radio" id="CasaCraft" name="brand" value="CasaCraft"/>
-                    <label htmlFor="CasaCraft">CasaCraft </label><br/>
-
-                    <input type="radio" id="ARRA" name="brand" value="ARRA"/>
-                    <label htmlFor="ARRA">ARRA</label><br/>
-
-                    <input type="radio" id="Chumbak" name="brand" value="Chumbak"/>
-                    <label htmlFor="Chumbak">Chumbak</label><br/>
-
-                    <input type="radio" id="Woodsworth" name="brand" value="Woodsworth"/>
-                    <label htmlFor="Woodsworth">Woodsworth</label><br/>
-
-                    <input type="radio" id="DreamzzFurniture" name="brand" value="Dreamzz_Furniture"/>
-                    <label htmlFor="Dreamzz_Furniture">Dreamz Furniture</label><br/><br/>
-                    <hr/>
-                </div> */}
         <div id="cardwraper"></div>
 
-        <div id="product">
-          {data.map((item) => (
-            <div key={item.id} className="card">
-              {getCard(
-                item.id,
-                item.img,
-                item.name,
-                item.category,
-                item.price,
-                item.discount
-              )}
-            </div>
-          ))}
-        </div>
+        <div id="product">{display(data)}</div>
       </div>
 
       <div id="pagination">{paginationButton(btns)}</div>
@@ -215,10 +202,8 @@ const Shoes = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
     </div>
   );
 };
 
-export default Shoes;
+export default Product;

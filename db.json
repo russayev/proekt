@@ -1,164 +1,218 @@
 {
   "products": [
     {
-      "name": "Qazaq Republic",
+      "name": "Qazaq Republic Kepka red",
       "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
       "price": 8000,
+      "category": "qazaqrepublic",
+      "discount": 20,
+      "id": "1"
+    },
+    {
+      "name": "Qazaq Republic Shapka blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-beanie-blue-87314a8553-4edc2d7944c77aef7486deed77a32c29.jpeg",
+      "price": 6000,
       "category": "qazaqrepublic",
       "discount": 10,
       "id": "2"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic Panama dark-blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-panama-dark-blue-35bc02852d-916afbadd7b9655cd50573183c9ea52c.jpeg",
+      "price": 4000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 20,
       "id": "3"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans black",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-black-149b132be7-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "4"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans classic",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-dark-blue-a4fb25528d-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "5"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic T-Shirt Zhaqsy kunder",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-tee-jk-white-cf47fc81ef-d223e98697a32d695270f4e44a69ab66.jpeg",
+      "price": 7000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 30,
       "id": "6"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
-      "discount": 10,
+      "name": "Nike Fleece black ",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/upload/iblock/a69/yuc5lwbk653ayiykl1h2evwxdrtjcjo3.webp",
+      "price": 12000,
+      "category": "nike",
+      "discount": 0,
       "id": "7"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
-      "discount": 10,
+      "name": "Nike Fleece white ",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/iblock/3d4/wdfykbyqwqdlzr42v5gk6emrm408y9ww.webp",
+      "price": 11000,
+      "category": "nike",
+      "discount": 0,
       "id": "8"
-    },
-    {
-      "name": "Qazaq Republic",
+    },{
+      "name": "Qazaq Republic Kepka red",
       "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
       "price": 8000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 20,
       "id": "9"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic Shapka blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-beanie-blue-87314a8553-4edc2d7944c77aef7486deed77a32c29.jpeg",
+      "price": 6000,
       "category": "qazaqrepublic",
       "discount": 10,
       "id": "10"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic Panama dark-blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-panama-dark-blue-35bc02852d-916afbadd7b9655cd50573183c9ea52c.jpeg",
+      "price": 4000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 20,
       "id": "11"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans black",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-black-149b132be7-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "12"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans classic",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-dark-blue-a4fb25528d-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "13"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic T-Shirt Zhaqsy kunder",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-tee-jk-white-cf47fc81ef-d223e98697a32d695270f4e44a69ab66.jpeg",
+      "price": 7000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 30,
       "id": "14"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
-      "discount": 10,
+      "name": "Nike Fleece white ",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/iblock/3d4/wdfykbyqwqdlzr42v5gk6emrm408y9ww.webp",
+      "price": 11000,
+      "category": "nike",
+      "discount": 0,
       "id": "15"
-    },
-    {
-      "name": "Qazaq Republic",
+    },{
+      "name": "Qazaq Republic Kepka red",
       "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
       "price": 8000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 20,
       "id": "16"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic Shapka blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-beanie-blue-87314a8553-4edc2d7944c77aef7486deed77a32c29.jpeg",
+      "price": 6000,
       "category": "qazaqrepublic",
       "discount": 10,
       "id": "17"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
+      "name": "Qazaq Republic Panama dark-blue",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-panama-dark-blue-35bc02852d-916afbadd7b9655cd50573183c9ea52c.jpeg",
+      "price": 4000,
       "category": "qazaqrepublic",
-      "discount": 10,
+      "discount": 20,
       "id": "18"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans black",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-black-149b132be7-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "19"
     },
     {
-      "name": "Qazaq Republic",
-      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
-      "price": 8000,
-      "category": "qazaqrepublic",
+      "name": "Ken Jeans classic",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-ken-dark-blue-a4fb25528d-923453b991a0d1169ec7f14e9497e35f.jpeg",
+      "price": 22000,
+      "category": "ken",
       "discount": 10,
       "id": "20"
     },
     {
-      "name": "Qazaq Republic",
+      "name": "Qazaq Republic T-Shirt Zhaqsy kunder",
+      "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-tee-jk-white-cf47fc81ef-d223e98697a32d695270f4e44a69ab66.jpeg",
+      "price": 7000,
+      "category": "qazaqrepublic",
+      "discount": 30,
+      "id": "21"
+    },
+    {
+      "name": "Nike Fleece black ",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/upload/iblock/a69/yuc5lwbk653ayiykl1h2evwxdrtjcjo3.webp",
+      "price": 12000,
+      "category": "nike",
+      "discount": 0,
+      "id": "22"
+    },
+    {
+      "name": "Nike Fleece white ",
+      "img": "https://fridaywear.ru/upload/resize_cache/webp/iblock/3d4/wdfykbyqwqdlzr42v5gk6emrm408y9ww.webp",
+      "price": 11000,
+      "category": "nike",
+      "discount": 0,
+      "id": "23"
+    },{
+      "name": "Qazaq Republic Kepka red",
       "img": "https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-kepka-red-e46067971c-641c587280d7008c57d52b44ad3bb867.jpeg",
       "price": 8000,
       "category": "qazaqrepublic",
-      "discount": 10,
-      "id": "21"
+      "discount": 20,
+      "id": "24"
     }
+
+  ],
+
+
+
+
+
+  "shoes": [
+    {
+      "name": "Nike Tapochki yellow",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3bc6965b-8972-47ca-876d-6686a6f03983/jordan-post-mens-slides-018jB2.png",
+      "price": 15000,
+      "category": "nike",
+      "discount": 10,
+      "id": "1"
+    },
+    {
+      "name": "Adidas Bounce black",
+      "img": "https://assetmanagerpim-res.cloudinary.com/images/w_600/q_90/266c50d1ba444debb30bafb1012d1824_9366/IE9278_01_standard.WebP",
+      "price": 58000,
+      "category": "adidas",
+      "discount": 10,
+      "id": "2"
+    }
+
   ]
 }

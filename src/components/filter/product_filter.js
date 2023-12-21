@@ -1,39 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import "./css/product.css";
+import "../css/product.css";
 
 const Filter = ({ setApi }) => {
   const handleSortChange = (e) => {
-    let newApi = "https://63f5b30259c944921f64b2be.mockapi.io/products?";
+    let newApi = "http://localhost:3000/products?";
 
     if (e.target.value === "desc") {
-      newApi = `${newApi}sortBy=price&order=desc`;
+      newApi = `${newApi}_sort=price&_order=desc`;
     } else if (e.target.value === "asc") {
-      newApi = `${newApi}sortBy=price&order=asc`;
+      newApi = `${newApi}_sort=price&_order=asc`;
+    } else {
+      newApi = `${newApi}`;
     }
-
     setApi(newApi);
   };
 
   const handleBrandChange = (e) => {
-    let newData = "https://63f5b30259c944921f64b2be.mockapi.io/products?";
+    let newData = "http://localhost:3000/products?";
 
     switch (e.target.value) {
-      case "CasaCraft":
-        newData = `${newData}category=CasaCraft`;
+      case "qazaqrepublic":
+        newData = `${newData}category=qazaqrepublic`;
         break;
-      case "ARRA":
-        newData = `${newData}category=ARRA`;
+      case "ken":
+        newData = `${newData}category=ken`;
         break;
-      case "Chumbak":
-        newData = `${newData}category=Chumbak`;
+      case "nike":
+        newData = `${newData}category=nike`;
         break;
-      case "Woodsworth":
-        newData = `${newData}category=Woodsworth`;
-        break;
-      case "Dreamzz_Furniture":
-        newData = `${newData}category=Dreamzz%20Furniture`;
-        break;
+
       default:
         break;
     }
@@ -43,9 +39,10 @@ const Filter = ({ setApi }) => {
 
   return (
     <div id="mainpage">
-      {/* Ваш JSX для компонента фильтрации и сортировки */}
       <div id="filter">
         <h3>Sort by</h3>
+        <br />
+
         <input
           type="radio"
           id="desc"
@@ -64,6 +61,16 @@ const Filter = ({ setApi }) => {
           onChange={handleSortChange}
         />
         <label htmlFor="asc">Low to High</label>
+        <br />
+
+        <input
+          type="radio"
+          id="all"
+          name="Sort"
+          value="all"
+          onChange={handleSortChange}
+        />
+        <label htmlFor="all">Show all</label>
 
         <br />
         <br />
@@ -73,35 +80,36 @@ const Filter = ({ setApi }) => {
         <br />
 
         <h3>Brand</h3>
-
-        <input
-          type="radio"
-          id="CasaCraft"
-          name="brand"
-          value="CasaCraft"
-          onChange={handleBrandChange}
-        />
-        <label htmlFor="ARRA">CasaCraft </label>
         <br />
 
         <input
           type="radio"
-          id="ARRA"
+          id="qazaqrepublic"
           name="brand"
-          value="ARRA"
+          value="qazaqrepublic"
           onChange={handleBrandChange}
         />
-        <label htmlFor="ARRA">ARRA </label>
+        <label htmlFor="qazaqrepublic">Qazaq Republic </label>
         <br />
 
         <input
           type="radio"
-          id="Woodsworth"
+          id="ken"
           name="brand"
-          value="Woodsworth"
+          value="ken"
           onChange={handleBrandChange}
         />
-        <label htmlFor="Woodsworth">Woodsworth </label>
+        <label htmlFor="ken">Ken </label>
+        <br />
+
+        <input
+          type="radio"
+          id="nike"
+          name="brand"
+          value="nike"
+          onChange={handleBrandChange}
+        />
+        <label htmlFor="nike">Nike </label>
         <br />
       </div>
     </div>
