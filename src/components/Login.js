@@ -1,37 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./css/login.module.css";
 
 const Login = () => {
-  // let getData = JSON.parse(localStorage.getItem("Data-User"));
-
-  // let loginBtn = document.getElementById('btn');
-  // let form = document.getElementById('loginForm');
-
-  // loginBtn.addEventListener('click', (e) => {
-  //     e.preventDefault();
-  //     let userMobile = form.mobile.value;
-  //     let password = form.password.value;
-  //     if (userMobile==="1234567890" && password==="admin@123"){
-  //         alert("Welcome Back! Admin")
-  //         window.location.href='admin'
-  //     }
-  //     else if (userMobile === getData.mobileNum && password === getData.password)
-  //     {
-  //         alert("Login Successfully");
-  //         window.location.href = '/'
-  //     }
-
-  //     else
-  //     {
-  //         alert("Invaild Mobile Number or Password")
-  //     }
-  // });
-
-  // let bar = document.getElementById('timeBar');
-
-  // bar.addEventListener('click', function () {
-  //     window.location.href = 'index.html'
-  // })
+  const handleBarClick = () => {
+    window.location.href = "./";
+  };
 
   return (
     <div id={classes.login} className={classes.login}>
@@ -47,9 +20,13 @@ const Login = () => {
             <p className={classes.checkmarkp}>Personalized Recommendations</p>
           </div>
         </div>
+
         <div className={classes.rightSidePopUp}>
           <div className={classes.loginPage}>
-            <h1 id={classes.timeBar}>&times;</h1>
+            <h1 id={classes.timeBar} onClick={handleBarClick}>
+              &times;
+            </h1>
+
             <div className={classes.userPanel}>
               <h3 id={classes.loginH3}>
                 <a href="./login">Login</a>
@@ -62,35 +39,41 @@ const Login = () => {
               <div className={classes.animation}></div>
             </div>
 
-            <form action="" id={classes.loginForm}>
-              <label htmlFor={classes.mobile}>Mobile Number</label>
-              <input
-                type="text"
-                name={classes.mobile}
-                id={classes.mobileNo}
-                placeholder="Enter Mobile Number"
-                required
-              />
-
-              <label htmlFor={classes.password}>Password</label>
-              <input
-                type="password"
-                name={classes.password}
-                id={classes.passwordField}
-                placeholder="Enter Password"
-              />
+            <form id={classes.loginForm}>
+              <div>
+                <label htmlFor={classes.mobile}>M number</label>
+                <input
+                  type="text"
+                  name={classes.mobile}
+                  id={classes.mobileNo}
+                  placeholder="Enter Mobile Number"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor={classes.password}>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id={classes.passwordField}
+                  placeholder="Enter Password"
+                />
+              </div>
 
               <button type="submit" id={classes.btn}>
-                <a href="./0" id={classes.home}>
-                  Login
-                </a>
+                Login
               </button>
-            </form>
 
-            <div className={classes.hr}></div>
-            <p id={classes.pTaglast}>
-              By logging in you agree to our <a href="#">Terms & Conditions</a>
-            </p>
+              <div>
+                <div className={classes.hr}></div>
+                <p id={classes.pTaglast}>
+                  By logging in you agree to our{" "}
+                  <a href="./conditions" target="_blank">
+                    Terms & Conditions
+                  </a>
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>

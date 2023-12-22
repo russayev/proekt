@@ -6,6 +6,7 @@ import Shoes from "./components/Shoes";
 import Card from "./components/Card";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Conditions from "./components/Conditions";
 
 import {
   BrowserRouter as Router,
@@ -30,6 +31,7 @@ function App() {
         <Route path="/card" element={<Card />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/conditions" element={<Conditions />} />
       </Routes>
 
       {location.pathname === "/login" && <Login />}

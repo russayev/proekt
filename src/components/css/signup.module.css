@@ -9,9 +9,6 @@
 
 
     #login {
-        background-image: url('https://i.pinimg.com/564x/ca/3f/15/ca3f15773508645f1f401040ee2a28f8.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 100%;
         height: 84vh;
         background-attachment: fixed;
@@ -26,12 +23,13 @@
         margin-left: 250px;
         position: fixed;
         display: flex;
-    }
+        border: 2px solid rgb(216, 102, 27);
+        box-sizing: border-box; /* Добавлено для включения границы в общую ширину элемента */
+      }
 
     .leftSidePopUp {
         width: 250px;
         background-image: linear-gradient(to bottom right, rgb(216, 102, 27), white);
-        /* background-image: linear-gradient(to bottom right, rgb(252, 0, 0), rgb(190, 172, 172)); */
         padding: 1rem;
 
     }
@@ -80,6 +78,7 @@
     }
 
     .rightSidePopUp .loginPage {
+        width: 450px;
         margin: 10px 5px;
     }
 
@@ -136,6 +135,7 @@ border-bottom: 3px solid rgb(216, 102, 27);
         background-color: rgb(216, 102, 27);
         border: 1px solid rgb(216, 102, 27);
         color: #f7f7f7;
+        padding: 10px 0 10px 0;
     }
 
     .rightSidePopUp .loginPage #or {
@@ -170,6 +170,11 @@ border-bottom: 3px solid rgb(216, 102, 27);
         color: rgb(112, 109, 109);
     }
 
+    #formSubmit {
+        display: flex;
+        flex-direction: column;
+    }
+     
 
 
     .socialink {
