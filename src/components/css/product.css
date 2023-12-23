@@ -114,8 +114,8 @@ img {
   width: 100%;
   padding: 12px 48px;
   text-align: center;
-  color: white; /* Добавьте цвет текста */
-  background: rgba(0, 0, 0, 0.5); /* Добавьте цвет фона */
+  color: white; 
+  background: rgba(0, 0, 0, 0.6); /* Добавьте цвет фона */
   border: 2px solid white;
   z-index: 2;
 }
@@ -266,77 +266,6 @@ img {
   height: 60px;
  justify-content: space-between;
  align-items: center;
-}
-#buy{
-  background-color: rgb(243, 109, 60);
-  color: white;
-  border: none;
-  height: 30px;
-  width: 100px;
-  border-radius: 3px;
-}
-#buy:hover{
-  cursor: pointer;
-  background-color: black;
-  color:#fff;
-  border: 2px solid black;
-}
-#remove{
- display: block;
- background-color:red;
- border: none;
- color:white;
- height:25px;
- width: 25px;
-}
-#remove:hover{
-  cursor: pointer;
-  border: 1px solid black;
-  background-color: white;
-  color: red;
-}
-#removebtn{
-  margin-right: 0px;
-  
-  height: 200px;
-}
-.inputfeild{
- display: block;
- margin-bottom: 10px;
- width: 90%;
- height: 20px;
-}
-.crudbtn{
-  display: block;
-  background-color: skyblue;
-  border: none;
-  height: 30px;
-  width: 95%;
-  cursor: pointer;
-  color: white;
-}
-#editbtn{
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0px;
-}
-#edit{
-  background-color: rgb(5, 198, 5);
-  display: block;
-  height: 30px;
-  border: none;
-  color: white;
-  width: 100px;
-  cursor: pointer;
-}
-.delete{
-  display: block;
-  height: 30px;
-  border: none;
-  color: white;
-  background-color:red;
-  width: 100px;
-  cursor: pointer;
 }
 @media screen and (max-width:700px) {
   #mainpage{

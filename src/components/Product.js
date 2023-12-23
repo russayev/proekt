@@ -143,8 +143,7 @@ const Product = () => {
   };
 
   const checkDuplicate = (ele) => {
-    // Реализуйте вашу проверку наличия элемента в состоянии React или в локальном хранилище
-    return true; // Замените этот код на вашу проверку
+    return true;
   };
 
   const addtoCard = () => {

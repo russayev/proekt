@@ -17,7 +17,6 @@ const Home = () => {
       }
     }, 2500);
 
-    // Clear the interval on component unmount to avoid memory leaks
     return () => clearInterval(intervalId);
   }, []);
 

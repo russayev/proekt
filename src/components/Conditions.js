@@ -1,4 +1,5 @@
 import React from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const Conditions = () => {
   const conditionsStyle = {
@@ -49,6 +50,30 @@ const Conditions = () => {
         Мы оставляем за собой право вносить изменения в наши условия соглашения.
         Пожалуйста, регулярно проверяйте их.
       </p>
+
+      <br />
+
+      <table className="table table-bordered" border="1">
+        <thead className="thead-dark">
+          <tr>
+            <th>Заголовок</th>
+            <th>Заголовок</th>
+            <th>Заголовок</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> 0 </td>
+            <td> 0 </td>
+            <td> 0 </td>
+          </tr>
+          <tr>
+            <td> 0 </td>
+            <td> 0 </td>
+            <td> 0 </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

@@ -15,10 +15,7 @@ const Signup = () => {
     if (formData.password !== formData.rePassword) {
       alert("Password does not match");
     } else {
-      // You can perform further actions with the form data here
       console.log(formData);
-      // Redirect to login page
-      // window.location.href = "login.html";
     }
   };
 
