@@ -41,7 +41,7 @@ const Login = () => {
 
             <form id={classes.loginForm}>
               <div>
-                <label htmlFor={classes.mobile}>M number</label>
+                <label htmlFor={classes.mobile}>Mobile number</label>
                 <input
                   type="text"
                   name={classes.mobile}

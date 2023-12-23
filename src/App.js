@@ -14,6 +14,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import AboutUs from "./components/About";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/conditions" element={<Conditions />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
 
       {location.pathname === "/login" && <Login />}

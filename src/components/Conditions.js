@@ -6,7 +6,7 @@ const Conditions = () => {
     fontFamily: "Arial, sans-serif",
     color: "#333",
     maxWidth: "800px",
-    margin: "0 auto", // Центрирование по горизонтали
+    margin: "0 auto",
     padding: "20px",
     backgroundColor: "#f8f8f8",
     borderRadius: "8px",
